@@ -1,10 +1,10 @@
 import { Fragment } from "react";
-import Form from "./components/Form";
+import Creditcard from "./components/Creditcard";
 
 const App = () => {
 	return (
 		<Fragment>
-			<Form />
+			<Creditcard />
 		</Fragment>
 	);
 };
