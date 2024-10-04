@@ -7,13 +7,16 @@ import {
 	CardName,
 	CardNumber,
 	Container,
+	ImageContainer,
 } from "../styles/card.ts";
 
 const Creditcard = () => {
 	return (
 		<Container>
 			<CardContainer>
-				<img src={Logo} alt="logo" />
+				<ImageContainer>
+					<img src={Logo} alt="logo" />
+				</ImageContainer>
 				<Card>
 					<CardNumber>0000 0000 0000 0000</CardNumber>
 				</Card>
