@@ -1,16 +1,11 @@
 import styled from "styled-components";
 import bgCardBack from "../assets/bg-card-back.png";
-import bgMain from "../assets/bg-main-mobile.png";
 
 export const Container = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 100vh;
-	background-image: url(${bgMain});
-	background-repeat: no-repeat;
-	background-size: cover;
 `;
 
 export const ContainerCvc = styled.div`
