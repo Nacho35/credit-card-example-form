@@ -13,14 +13,15 @@ export const CardContainer = styled.div`
 	background-repeat: no-repeat;
 	object-fit: contain;
 	overflow: hidden;
-	width: 447px;
-	height: 245px;
-	padding: 0;
+	width: 100%;
+	height: 100%;
+	padding: 1rem 0;
 	margin: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	z-index: 2;
 `;
 
 export const ImageContainer = styled.div`
@@ -38,8 +39,8 @@ export const Card = styled.div`
 export const CardNumber = styled.h2`
 	font-size: 1.5rem;
 	margin-top: 2rem;
-	margin-bottom: auto;
 	color: white;
+	word-spacing: 25px;
 `;
 
 export const CardData = styled.div`
