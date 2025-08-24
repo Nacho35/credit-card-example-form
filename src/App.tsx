@@ -1,20 +1,53 @@
-import { Fragment } from "react";
-import Creditcard from "./components/Creditcard";
-import Creditcardback from "./components/Creditcardback";
+import CardsStack from "./components/CardsStack";
 import Form from "./components/Form";
-import { CardsContainer, ZoomContainer } from "./styles/CardsContainer";
+import {
+	CardsBackground,
+	CardsContainer,
+	ZoomContainer,
+} from "./styles/CardsContainer";
 
 const App = () => {
 	return (
-		<Fragment>
-			<CardsContainer>
-				<ZoomContainer>
-					<Creditcard />
-					<Creditcardback />
-				</ZoomContainer>
-			</CardsContainer>
-			<Form />
-		</Fragment>
+		<div
+			style={{
+				display: "flex",
+				flexDirection: "row",
+				justifyContent: "center",
+				alignItems: "center",
+				gap: "4rem",
+				width: "100%",
+				minHeight: "100vh",
+				flexWrap: "wrap",
+				background: "#fff",
+			}}>
+			<div
+				style={{
+					flex: "1 1 400px",
+					display: "flex",
+					alignItems: "center",
+					justifyContent: "center",
+					height: "100vh",
+				}}>
+				<CardsBackground>
+					<CardsContainer>
+						<ZoomContainer>
+							<CardsStack />
+						</ZoomContainer>
+					</CardsContainer>
+				</CardsBackground>
+			</div>
+			<div
+				style={{
+					flex: "1 1 400px",
+					display: "flex",
+					alignItems: "center",
+					justifyContent: "center",
+					height: "100vh",
+					background: "#fff",
+				}}>
+				<Form />
+			</div>
+		</div>
 	);
 };
 
